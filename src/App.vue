@@ -1,17 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <employe v-model="idemploye"  :msg="msg" :id="id"></employe>
+  <v-app>
+    <v-main>
+      <employe v-if="isDisplayed" v-model="idemploye"  :msg="msg" :id="id"></employe><br>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import Employe from './components/Employe.vue'
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld,
     Employe
   },
   data: () => ({
