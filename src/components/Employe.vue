@@ -10,8 +10,8 @@
   </div>
   <p><button @click="changeMyId">Increase my_id</button></p>
   <p>{{ toto }}</p>
-  <p><button @click="incToto">Incrémente toto</button></p>
   <a :href="`https://golux.lausanne.ch/goeland/employe/employe_data.php?IdEmploye=${my_obj.idemploye}`" target="__blank">Infos employé</a>
+  <p><v-btn color="success" @click="incToto">Incrémente toto</v-btn></p>
 </template>
 
 <script>
@@ -64,7 +64,7 @@ export default {
 
     setTimeout(() => {
       title.value = "THIS IS A NEW TITLE"
-      my_obj.idemploye = props.modelValue
+      //my_obj.idemploye = props.modelValue
       pos.x = 100
       pos.y = 200
     }, 5000);
@@ -117,5 +117,4 @@ export default {
 </script>
 
 <style>
-
 </style>

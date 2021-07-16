@@ -16,7 +16,7 @@ export default {
     Employe
   },
   data: () => ({
-    idemploye: 666,
+    idemploye: 10958,
     msg: 'toto',
     id: 6
   }),
@@ -37,5 +37,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+* {
+   text-transform: none !important; 
 }
 </style>
